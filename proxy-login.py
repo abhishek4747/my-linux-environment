@@ -64,7 +64,7 @@ class Proxy:
 					if res=='Session Expired':
 						print "Session Expired Run Script again"
 					else:
-						self.timer = threading.Timer(10.0,ref)
+						self.timer = threading.Timer(60.0,ref)
 						self.timer.daemon = True
 						self.timer.start()
 			self.timer = threading.Timer(60.0,ref)
@@ -126,8 +126,8 @@ if __name__=="__main__":
 	if n==1:
 		print "\n\nUsage: python login_terminal.py username password proxy_category\n\n"
 	else:
-		uname = sys.argv[1] if n>1 else 'cs5110272'
-		passwd = sys.argv[2] if n>2 else 'os123iscool'
+		uname = sys.argv[1] if n>1 else 'yourUsernameHere'
+		passwd = sys.argv[2] if n>2 else 'yourPasswordHere'
 		proxycat = sys.argv[3] if n>3 else 'dual'
 		user = Proxy(username=uname, password=passwd, proxy_cat=proxycat)
 		print '\nLogin',user.login()[STATUS] #for logging in
