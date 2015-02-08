@@ -113,16 +113,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-function setproxy(){
-	export http_proxy='proxy62.iitd.ernet.in:3128'
-	export https_proxy='proxy62.iitd.ernet.in:3128'
-
-}
-
-function unsetproxy(){
-	export http_proxy=''
-	export https_proxy=''
-}
-
-alias start_proxy='python ~/proxy-login.py cs5110272 os123iscool'
-
