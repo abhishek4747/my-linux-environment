@@ -116,5 +116,5 @@ fi
 
 export http_proxy='proxy62.iitd.ernet.in:3128'
 export https_proxy='proxy62.iitd.ernet.in:3128'
-alias start_proxy='python /home/abhishek/Downloads/proxy-login.py'
+alias start_proxy='python ~/proxy-login.py'
 
