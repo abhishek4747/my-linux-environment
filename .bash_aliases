@@ -11,3 +11,4 @@ function unsetproxy(){
 
 alias start_proxy='python ~/Proxy-login/login-terminal.py cs5110272 os123iscool'
 
+alias palasi="ssh cs5110272@palasi.cse.iitd.ernet.in"
