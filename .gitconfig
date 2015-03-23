@@ -3,3 +3,44 @@
 	name = Abhishek Kumar
 [push]
 	default = matching
+
+# I like colors.
+[color]
+    ui = always
+
+# Prevent problems with http transport by using large buffer
+[http]
+    postBuffer = 524288000
+		proxy = http://proxy61.iitd.ernet.in:3128
+
+# Save troubles with moronic firewall and stupid proxy.
+# Use https for github.
+[url "https://github.com/"]
+    insteadOf = git://github.com/
+    insteadOf = ssh://git@github.com:
+    insteadOf = git@github.com:
+    insteadOf = https://github.com/
+
+; [url "git://github.com/"]
+;     insteadOf = git://github.com/
+;     insteadOf = ssh://git@github.com:
+;     insteadOf = git@github.com:
+;     insteadOf = https://github.com/
+
+[url "http://paraview.org/ParaView.git"]
+insteadOf = git://paraview.org/ParaView.git
+
+[url "http://vtk.org/VTK.git"]
+insteadOf = git://vtk.org/VTK.git
+
+[url "http://paraview.org/VisItBridge.git"]
+insteadOf = git://paraview.org/VisItBridge.git
+
+[url "http://public.kitware.com/protobuf.git"]
+insteadOf = git://public.kitware.com/protobuf.git
+
+[url "http://paraview.org/QtTesting.git"]
+insteadOf = git://paraview.org/QtTesting.git
+
+[https]
+	proxy = https://proxy61.iitd.ernet.in:3128
