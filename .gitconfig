@@ -9,9 +9,9 @@
     ui = always
 
 # Prevent problems with http transport by using large buffer
-[http]
-    postBuffer = 524288000
-		proxy = http://proxy61.iitd.ernet.in:3128
+;[http]
+;    postBuffer = 524288000
+;		proxy = http://proxy61.iitd.ernet.in:3128
 
 # Save troubles with moronic firewall and stupid proxy.
 # Use https for github.
@@ -42,5 +42,5 @@ insteadOf = git://public.kitware.com/protobuf.git
 [url "http://paraview.org/QtTesting.git"]
 insteadOf = git://paraview.org/QtTesting.git
 
-[https]
-	proxy = https://proxy61.iitd.ernet.in:3128
+;[https]
+;	proxy = https://proxy61.iitd.ernet.in:3128
